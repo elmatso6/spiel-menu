@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spiele Menü</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Arial', sans-serif;
+      color: white;
+    }
+    
+    .menu-container {
+      text-align: center;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(4px);
+    }
+    
+    h1 {
+      font-size: 48px;
+      margin-bottom: 50px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .games-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .game-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      padding: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .game-card:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.6);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    
+    .game-card h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+    
+    .game-card p {
+      font-size: 16px;
+      opacity: 0.9;
+      line-height: 1.4;
+    }
+    
+    .game-icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+    
+    @media (max-width: 768px) {
+      .games-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      
+      h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      
+      .menu-container {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <h1>🎮 Spiele Menü</h1>
+    
+    <div class="games-grid">
+      <a href="brick_braker/index.html" class="game-card">
+        <div class="game-icon">🧱</div>
+        <h2>Brick Shooter</h2>
+        <p>Zerstöre alle Blöcke mit deinen Bällen. Clevere Winkel sind der Schlüssel zum Sieg!</p>
+      </a>
+      
+      <a href="html_spiel/index.html" class="game-card">
+        <div class="game-icon">🚗</div>
+        <h2>Endless Road</h2>
+        <p>Überlebe auf der endlosen Straße. Weiche Hindernissen aus und sammle Power-Ups!</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
