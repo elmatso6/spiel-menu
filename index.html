@@ -39,7 +39,7 @@
     
     .games-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
       margin-bottom: 30px;
     }
@@ -103,6 +103,12 @@
     <h1>🎮 Spiele Menü</h1>
     
     <div class="games-grid">
+      <a href="https://elmatso6.github.io/cookie-clicker/" class="game-card">
+        <div class="game-icon">🍪</div>
+        <h2>Cookie Clicker</h2>
+        <p>Klicke auf Kekse und sammle passive Einkünfte! Kaufe Upgrades und automatische Produzenten.</p>
+      </a>
+      
       <a href="https://elmatso6.github.io/block-braker/" class="game-card">
         <div class="game-icon">🧱</div>
         <h2>Brick Shooter</h2>
@@ -118,3 +124,4 @@
   </div>
 </body>
 </html>
+
